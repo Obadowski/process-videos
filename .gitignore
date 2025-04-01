@@ -8,6 +8,8 @@ build/
 .env
 .venv/
 venv/
+.pypi/
+pypi/
 *.log
 
 # macOS
