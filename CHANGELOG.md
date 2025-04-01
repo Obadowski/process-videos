@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.3] - 2025-04-01
+### Added
+- Developer name and some minor data to Github profile and repo
+
 ## [0.2.2] - 2025-04-01
 ### Added
 - Fallback to `imageio-ffmpeg` when `ffmpeg` is not available in system PATH

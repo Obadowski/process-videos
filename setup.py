@@ -42,10 +42,17 @@
 # )
 
 from setuptools import setup, find_packages
+from pathlib import Path
+
+def read_file(path):
+    try:
+        return Path(path).read_text(encoding='utf-8')
+    except FileNotFoundError:
+        return ''
 
 setup(
     name='process-videos',
-    version='0.2.2',
+    version='0.2.3',
     packages=find_packages(),
     install_requires=[
         'click',
@@ -56,15 +63,15 @@ setup(
             'process-videos=process_videos.cli:main',
         ],
     },
-    author='Your Name',
+    author='Vinicius Obadowski',
     author_email='you@example.com',
     description='Batch video processor with audio normalization and ffmpeg compression',
-    long_description=open('README.md').read() + "\n\n" + open('CHANGELOG.md').read(),
+    long_description=read_file("README.md") + "\n\n" + read_file("CHANGELOG.md"),
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/process-videos',
+    url='https://github.com/Obadowski/process-videos',
     project_urls={
-        'Bug Tracker': 'https://github.com/yourusername/process-videos/issues',
-        'Source Code': 'https://github.com/yourusername/process-videos',
+        'Bug Tracker': 'https://github.com/Obadowski/process-videos/issues',
+        'Source Code': 'https://github.com/Obadowski/process-videos',
     },
     classifiers=[
         'Development Status :: 4 - Beta',

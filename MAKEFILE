@@ -1,0 +1,13 @@
+.PHONY: build upload clean release
+
+build:
+	python -m build
+
+upload:
+	twine upload dist/*
+
+clean:
+	rm -rf build dist *.egg-info
+
+release: clean build upload
+
