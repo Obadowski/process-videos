@@ -1,14 +1,18 @@
 # Changelog
 
+## [0.2.4] - 2025-04-01
+### Added
+- Minor correction in README.md file with the correct pip command
+
 ## [0.2.3] - 2025-04-01
 ### Added
 - Developer name and some minor data to Github profile and repo
+- Makefile and publish.sh for simplified publishing workflow
 
 ## [0.2.2] - 2025-04-01
 ### Added
 - Fallback to `imageio-ffmpeg` when `ffmpeg` is not available in system PATH
 - Automatic CLI setup via setuptools entry_points
-- Makefile and publish.sh for simplified publishing workflow
 
 ### Changed
 - All CLI messages and structure translated to English
