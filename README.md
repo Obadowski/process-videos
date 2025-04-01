@@ -5,7 +5,7 @@ CLI tool for batch processing narrated videos: extracts audio, applies loudness 
 ## Installation
 
 ```bash
-pip install .
+pip install process-videos
 ```
 
 ## Usage
